@@ -1,0 +1,336 @@
+.header {
+    width: 100%;
+    height: 89px;
+    border-bottom: 1px solid #c5c5c5;
+    background: #fff;
+}
+.mid {
+    margin: 0 auto;
+    width: 980px;
+}
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #333333;
+}
+
+fieldset, img {
+    border: 0;
+}
+.login_line {
+    margin-top: 28px;
+    height: 30px;
+    line-height: 30px;
+}
+.login_line a {
+    display: inline-block;
+    margin-right: 30px;
+}
+.blue {
+    color: #325e8f;
+    cursor: pointer;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.set {
+    background: url(images/loginIcon.gif) no-repeat -1px -1px;
+}
+.icon {
+    display: inline-block;
+    margin-top: -3px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+}
+
+
+.login_line a:last-child {
+    margin-right: 10px;
+}
+a.red {
+    color: #cf0404;
+}
+.service {
+    background: url(images/loginIcon.gif) no-repeat -25px -1px;
+}
+.login_line a:last-child {
+    margin-right: 10px;
+}
+a.red {
+    color: #cf0404;
+}
+.login_line a {
+    display: inline-block;
+    margin-right: 30px;
+}
+body {
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.content {
+    overflow: hidden;
+}
+.mid {
+    margin: 0 auto;
+    width: 980px;
+}
+.register_box {
+    overflow: hidden;
+    margin-top: 24px;
+    background: #fff;
+    border: 6px solid rgba(199,199,199,0.7);
+}
+.tabForm {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 566px;
+    overflow: hidden;
+    border-right: 1px solid #dcdcdc;
+}
+.tabForm_btn {
+    height: 35px;
+    width: 515px;
+    margin: 33px auto 0 auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.tabForm_btn li:first-child {
+    border-right: 1px solid #ddd;
+}
+.tabForm_btn li {
+    position: relative;
+    float: left;
+    width: 257px;
+    height: 23px;
+    text-align: center;
+    font-size: 14px;
+}
+.tabForm_btn a {
+    display: block;
+    width: 100%;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a {
+    color: #333333;
+}
+
+.tabForm_btn .icon {
+    display: inline-block;
+    height: 24px;
+}
+.mobileIcon {
+    width: 15px;
+    background: url(images/loginIcon.gif) no-repeat -387px -5px;
+}
+.tab_active .actBd {
+    display: block;
+}
+.actBd {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    width: 100%;
+    height: 7px;
+    background: url(images/loginIcon.gif) no-repeat left -37px;
+}
+.formBox {
+    position: absolute;
+    width: 200%;
+}
+input, select, textarea {
+    font-size: 100%;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,\5b8b\4f53;
+}
+
+.mgnAuto {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.text_box {
+    position: relative;
+    margin-top: -1px;
+    width: 348px;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #c5c5c5;
+}
+
+.text_box label {
+    display: inline-block;
+    margin-left: 18px;
+    color: #969696;
+    vertical-align: middle;
+}
+
+
+.text_box input {
+    width: 260px;
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    padding-bottom: 3px;
+    background: transparent;
+    vertical-align: middle;
+    text-indent: 20px;
+}
+
+
+.mgTop12 {
+    margin-top: 12px;
+}
+
+.codeBox {
+    height: 54px;
+}
+
+
+.codeText_s {
+    width: 169px;
+}
+
+
+.codePic {
+    margin-left: 10px;
+    width: 124px;
+    height: 52px;
+    border: 1px solid #ddd;
+}
+
+.codeBox a {
+    margin-left: 5px;
+    height: 54px;
+    line-height: 54px;
+}
+
+.register_inner {
+    width: 600px;
+    padding-top: 34px;
+    overflow: hidden;
+}
+.adBox {
+    margin-top: 83px;
+    margin-left: 35px;
+    width: 300px;
+    height: 356px;
+    text-align: center;
+}
+.adBox img {
+    width: 300px;
+    height: 356px;
+}
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 22px;
+}
+.footer a {
+    display: inline-block;
+    margin: 0 10px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+.text_box.focus {
+    z-index: 3;
+    position: relative;
+    border: 1px solid rgb(102,175,233);
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0 0 5px rgba(102,175,233,1);
+    -ms-box-shadow: 0 0 5px rgba(102,175,233,1);
+    -moz-box-shadow: 0 0 5px rgba(102,175,233,1);
+    -o-box-shadow: 0 0 5px rgba(102,175,233,1);
+    box-shadow: 0 0 5px rgba(102,175,233,1);
+}
+
+.regBtn {
+    display: block;
+    width: 348px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #a8221f;
+    border-radius: 2px;
+    background: #fe4a49;
+    background: linear-gradient(#ff6261,#fa413f);
+    background: -webkit-linear-gradient(#ff6261,#fa413f);
+    background: -ms-linear-gradient(#ff6261,#fa413f);
+    background: -moz-linear-gradient(#ff6261,#fa413f);
+    background: -o-linear-gradient(#ff6261,#fa413f);
+    -webkit-box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+    -ms-box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+    -moz-box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+    -o-box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+    box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+    cursor: pointer;
+}
+
+.text_box .regCodeBtn {
+    margin-left: 12px;
+    display: inline-block;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #ddd;
+    padding: 0px 8px;
+    color: #646464;
+}
+
+.text_box .mobileIcon {
+    display: inline-block;
+    width: 15px;
+    height: 24px;
+    background: url(images/loginIcon.gif) no-repeat -387px -5px;
+}
+
+.text_box .codeText {
+    margin-left: 5px;
+    vertical-align: middle;
+    width: 103px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #ddd;
+    text-indent: 0;
+    text-align: center;
+    color: #646464;
+}
+
+.xieyi {
+    height: 40px;
+    line-height: 40px;
+}
+
+.blue {
+    color: #325e8f;
+    cursor: pointer;
+}
+.codeText_s input {
+    width: 100px;
+    text-indent: 6px;
+}
+
+
+
+
+

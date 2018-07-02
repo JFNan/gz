@@ -1,0 +1,195 @@
+/*尾部*/
+.footerMid, .v6_footer {
+    font-size: 13px;
+    font-family: "微软雅黑";
+}
+.footerMid {
+    height: 343px;
+    background: url(../img/footer_Bg.gif);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.7);
+}
+.footerMid_t {
+    padding-top: 7px;
+    width: 1150px;
+    height: 113px;
+    border-bottom: 2px solid #787878;
+}
+.footer_tel {
+    margin-top: 20px;
+    width: 301px;
+    height: 75px;
+    background: url(../img/tel.png) left top no-repeat;
+}
+.footer_serv {
+    margin: 61px 0 0 30px;
+}
+.qrCodeBox p {
+    margin-right: 20px;
+    margin-top: 15px;
+    color: #fff;
+}
+.footer_qrCode {
+    width: 104px;
+    height: 104px;
+}
+.footer_link {
+    margin-top: 40px;
+}
+
+.footer_center {
+    margin: 0 auto;
+    width: 1150px;
+}
+
+.footer_link dl {
+    float: left;
+    width: 170px;
+}
+
+
+.footer_link dt {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+strong, b {
+    font-weight: bold;
+}
+.mid_box {
+    margin: 0 auto;
+    width: 1200px;
+}
+.frendLinkBox {
+    position: relative;
+    height: 32px;
+}
+.friendLinkList a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.friendLinkList a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.authentication {
+    margin-top: 10px;
+    margin-left: 380px;
+}
+.authentication a {
+    display: inline-block;
+    width: 110px;
+    height: 48px;
+    background: url(http://static.gjw.com/product/20161021/img/aut_06.jpg) no-repeat;
+}
+.authentication a.depart {
+    margin-left: 10px;
+    background-position: -120px 0;
+}
+.authentication a.gsxz {
+    margin-left: 10px;
+    background-position: -240px 0;
+}
+dd {
+    display: block;
+}
+.footer_link dt {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+.footer_qrCode {
+    width: 104px;
+    height: 104px;
+}
+.firstDl {
+    margin-left: 100px;
+}
+dt {
+    display: block;
+}
+.footer_link {
+    margin-top: 40px;
+}
+.footer_link a {
+    line-height: 24px;
+    color: #a9a9a9;
+}
+.mid_box {
+    margin: 0 auto;
+    width: 1200px;
+}
+.copyright {
+    padding-top: 83px;
+    background: url(http://static.gjw.com/product/20161021/img/baozheng_06.jpg) center top no-repeat;
+    line-height: 24px;
+}
+
+.frendLinkBox {
+    position: relative;
+    height: 32px;
+}
+
+
+.friendLinkList {
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px!important;
+}
+
+
+.friendLinkList li {
+    height: 32px;
+    line-height: 32px;
+    margin-left: 110px;
+}
+
+.friendLinkList a {
+    display: inline-block;
+    margin: 0 10px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 270px;
+    -webkit-margin-end: 0px;
+}
+.authentication a.depart {
+    margin-left: 10px;
+    background-position: -120px 0;
+}
+.authentication a {
+    display: inline-block;
+    width: 110px;
+    height: 48px;
+    background: url(http://static.gjw.com/product/20161021/img/aut_06.jpg) no-repeat;
+}
+
+.v6_footer a:hover {
+    color: #c40000;
+}
+
+.friendLinkList a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.authentication {
+    margin-top: 10px;
+}
+.authentication a.depart {
+    margin-left: 10px;
+    background-position: -120px 0;
+}
+.authentication a.gsxz {
+    margin-left: 10px;
+    background-position: -240px 0;
+}
+.copyright {
+    padding-top: 83px;
+    background: url(http://static.gjw.com/product/20161021/img/baozheng_06.jpg) center top no-repeat;
+    line-height: 24px;
+}

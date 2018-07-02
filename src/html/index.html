@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购酒网-白酒,红酒,洋酒-货到付款,用心卖好酒</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/content.css"> 
+    <script src="../jquery-3.3.1.js"></script>
+    <script src="http://static.gjw.com//public/js/jquery-1.7.1.min.js"></script>
+    <script src="../js/index.js"></script>
+  
+
+</head>
+
+<body>
+    <!--头部导航-->
+    <div class="topNav">
+        <div class="topNavbox clearfix">
+            <div class="focusbtn fl">
+                    <img src="../img/ewms.png" width="12" height="12" alt="" original="../img/ewms.png">
+                <span> 购酒网APP </span>
+                <em> ﹀</em>
+            </div>
+            <ul class="navBox fr clearfix">
+                <li class="loginReg" id="login">
+                    <em>Hi,请 </em>
+                    <a href="#" class="login" rel="nofollow" target="_self">登录</a>/
+                    <a href="#" class="reg" rel="nofollow" target="_self">注册</a>
+                </li>
+                <li class="line"></li>
+                <li class="wddd navlist">
+                    <a href="#" class="force_link" rel="nofollow">我的订单</a>
+                </li>
+                <li class="line"></li>
+                <li class="yhzx navlist">
+
+                    <a href="#" rel="nofollow">个人中心</a>
+
+                </li>
+                <li class="line"></li>
+                <li class="zxkf navlist">
+                    <a onclick="NTKF.im_openInPageChat('kf_9250_1462524671271')" class="force_link" rel="nofollow">在线客服</a>
+                </li>
+                <li class="line"></li>
+
+                <li class="bz navlist">
+                    <a href="http://www.gjw.com/news/default.htm" class="force_link" rel="nofollow">购酒公告</a>
+                </li>
+                <li class="line"></li>
+                <li class="bz navlist">
+                    <a href="http://www.gjw.com/help/show.htm" class="force_link" rel="nofollow">帮助</a>
+                </li>
+                <li class="line"></li>
+                <li class="tyj navlist">
+                    <a href="http://order.gjw.com/FeedBack/default.htm" class="force_link force_link_active" rel="nofollow">提意见</a>
+                </li>
+                <li class="line"></li>
+                <li class="tel navlist">
+                    <a class="force_link force_link_active telNum">
+                        <em>☏</em> 400-722-1919</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--广告-->
+    <div class="topAd" id="bigimg" style="height: 80px;">
+        <a href="http://www.gjw.com/Minisite/20180622/1513.htm" target="_blank">
+            <img src="http://img0.gjw.com/Famous/2018/0625/8384f4b583dc4d009a34e0fd630120ac.jpg" alt="" original="http://img0.gjw.com/Famous/2018/0625/8384f4b583dc4d009a34e0fd630120ac.jpg">
+        </a>
+    </div>
+    <!--图标、搜索框、购物车s-->
+    <div class="topItem">
+        <a href="http://www.gjw.com" class="fl topLogo">
+            <img src="../img/logo1.jpg" alt="购酒网" original="/Images/logo1.jpg">
+        </a>
+        <div class="fl topGif" id="topGif">
+            <a href="http://www.gjw.com/product/item-id-7630.html" target="_blank">
+                <img src="http://img0.gjw.com/Famous/2018/0626/2a904f2eab2a413aa9979f2baf9a0993.gif" alt="" original="http://img0.gjw.com/Famous/2018/0626/2a904f2eab2a413aa9979f2baf9a0993.gif">
+            </a>
+        </div>
+        <div class="topSearch fl">
+            <div class="clearfix" id="clearsch" style=" position:absolute; z-index:12;">
+                <div class="@@-container">
+                    <input type="text" @@="off" name="query" placeholder="茅台飞天" class="topSearchtxt fl" style="border-radius: 3px 0px 0px 3px;">
+                    <div class="proposal-box">
+                        <ul class="proposal-list"></ul>
+                    </div>
+                    <div class="topSearchbtn fl">搜索</div>
+                </div>
+            </div>
+            <div class="topTags clearfix" id="Hot_search">
+                <a href="http://www.gjw.com/baijiu-maotai/" title="茅台" class="v6_hot">茅台</a>
+                <a href="http://www.gjw.com/baijiu-wuliangye/" title="五粮液" class="v6_hot">五粮液</a>
+                <a href="http://www.gjw.com/putaojiu-lafeixilie" title="拉菲" class="v6_hot">拉菲</a>
+                <a href="http://www.gjw.com/putaojiu-benfu" title="奔富" class="v6_hot">奔富</a>
+                <a href="http://www.gjw.com/baijiu-yanghe" title="洋河" class="v6_hot">洋河</a>
+                <a href="http://www.gjw.com/putaojiu-huangweidaishu" title="黄尾袋鼠" class="v6_hot">黄尾袋鼠</a>
+                <a href="http://www.gjw.com/baijiu-jiannanchun" title="剑南春" class="v6_hot">剑南春</a>
+                <a href="http://www.gjw.com/baijiu-luzhoulaojiao" title="泸州老窖" class="v6_hot">泸州老窖</a>
+            </div>
+        </div>
+        <div class="topShopcar fr">
+            <div class="shopcarBox">
+                <a href="http://order.gjw.com/order/Cart.html">
+                    <em></em>
+                    <span>去购物车结算</span>
+                    <span class="rtjt">&gt;</span>
+                    <div class="itemNum">0</div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!--商品导航-->
+     <div class="itemNav clearfix">
+        <ul class="itemList fl">
+            <li id="listnav">
+                <a href="">☰ &nbsp; 全 部 分 类</a>
+                <ul class="qbfl-list">
+                    <li class="yjxg-on">
+                        <a href="">
+                            <img src="../img/ax-icon.png" />&nbsp;一键选购</a>
+                        <em>›</em>
+                        <div class="yjxg-box sec-box none" id="yijian">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">购酒推荐</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://tm.gjw.com/" class="color3" target="_blank">特卖会</a>
+                                        <a href="http://www.gjw.com/Minisite/20170725/1257.htm" class="color0" target="_blank">高端收藏</a>
+                                        <a href="http://www.gjw.com/Minisite/20170731/1267.htm" class="color1" target="_blank">大坛酒专场</a>
+                                        <a href="http://www.gjw.com/Minisite/20180521/1483.htm" class="color1" target="_blank">整箱购</a>
+                                        <a href="http://www.gjw.com/Minisite/20170726/1259.htm" class="color2" target="_blank">婚宴酒</a>
+                                        <a href="http://www.gjw.com/Minisite/20170726/1258.htm" class="color2" target="_blank">年份老酒</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box long">
+                                    <div class="list-tit">红酒洋酒专场</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/yangjiu" class="color0" target="_blank">洋酒钜惠</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-mingzhuangzhicai" class="color3" target="_blank">名庄直采</a>
+                                        <a href="http://www.gjw.com/Search.html?Key=750ml*6瓶&amp;sour=null" class="color1" target="_blank">红酒整箱钜惠</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box short">
+                                    <div class="list-tit">精选会场</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/Search.html?Key=ALL" class="color0" target="_blank">新品尝鲜</a>
+                                        <a href="http://www.gjw.com/Minisite/20170731/1268.htm" class="color1" target="_blank">聚餐用酒</a>
+                                        <a href="http://www.gjw.com/qingcang/default.htm" class="color1" target="_blank">清仓特卖</a>
+                                        <a href="http://www.gjw.com/list/qingjiu" class="color1" target="_blank">居酒屋</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box short">
+                                    <div class="list-tit">特色专区</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/baijiu-shuxin" class="color3" target="_blank">舒心酱酒</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box short">
+                                    <div class="list-tit">商务推荐</div>
+                                    <div class="list-msg clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix">
+                                    <a href="http://www.gjw.com/list/baijiu-maotai" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E8%8C%85%E5%8F%B0.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-wuliangye" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E4%BA%94%E7%B2%AE%E6%B6%B2.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-jiannanchun" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E5%89%91%E5%8D%97%E6%98%A5.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-luzhoulaojiao" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E6%B3%B8%E5%B7%9E%E8%80%81%E7%AA%96.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-xijiu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E8%B4%B5%E5%B7%9E%E4%B9%A0%E9%85%92.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-zhenjiu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E7%8F%8D%E9%85%92.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-benfu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E5%A5%94%E5%AF%8C.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-lafeixilie" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/lafei.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-zhihuashi" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E8%8A%9D%E5%8D%8E%E5%A3%AB.jpg">
+                                    </a>
+                                </div>
+                                <a href="http://www.gjw.com/product/item-id-7314.htm" target="_blank">
+                                    <img src="http://img0.gjw.com/Minisite/2018/luy/6/6-16/1/1/1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bj-on">
+                        <a href="http://www.gjw.com/baijiu">
+                            <img src="../img/bj-icon.png" />&nbsp;白 酒</a>
+                        <em>›</em>
+                        <div class="bj-box sec-box none" id="baijiu">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">知名白酒品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/baijiu-maotai" class="color3" target="_blank">茅台</a>
+                                        <a href="http://www.gjw.com/list/baijiu-wuliangye" class="color3" target="_blank">五粮液</a>
+                                        <a href="http://www.gjw.com/list/baijiu-jiannanchun" class="color0" target="_blank">剑南春</a>
+                                        <a href="http://www.gjw.com/list/baijiu-luzhoulaojiao" class="color3" target="_blank">泸州老窖</a>
+                                        <a href="http://www.gjw.com/list/baijiu-langjiu" class="color0" target="_blank">郎酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-yanghe" class="color1" target="_blank">洋河</a>
+                                        <a href="http://www.gjw.com/list/baijiu-fenjiu" class="color0" target="_blank">汾酒</a>
+                                        <a href="http://www.gjw.com/baijiu-jiuguijiu" class="color0" target="_blank">酒鬼</a>
+                                        <a href="http://www.gjw.com/list/baijiu-shuijingfang" class="color1" target="_blank">水井坊</a>
+                                        <a href="http://www.gjw.com/list/baijiu-xijiu" class="color1" target="_blank">习酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-xifengjiu" class="color0" target="_blank">西凤</a>
+                                        <a href="http://www.gjw.com/list/baijiu-zhenjiu" class="color3" target="_blank">珍酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-gujinggongjiu" class="color0" target="_blank">古井贡酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-dongjiu" class="color0" target="_blank">董酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-jinliufu" class="color0" target="_blank">金六福</a>
+                                        <a href="http://www.gjw.com/list/baijiu-shedejiu" class="color1" target="_blank">舍得</a>
+                                        <a href="http://www.gjw.com/list/baijiu-niulanshan" class="color0" target="_blank">牛栏山</a>
+                                        <a href="http://www.gjw.com/list/baijiu-sitejiu" class="color0" target="_blank">四特</a>
+                                        <a href="http://www.gjw.com/list/baijiu-guotai" class="color0" target="_blank">国台</a>
+                                        <a href="http://www.gjw.com/list/baijiu-hengshuilaobaigan" class="color0" target="_blank">衡水老白干</a>
+                                        <a href="http://www.gjw.com/list/baijiu-dukang" class="color0" target="_blank">杜康</a>
+                                        <a href="http://www.gjw.com/list/baijiu-kouzijiu" class="color0" target="_blank">口子窖</a>
+                                        <a href="http://www.gjw.com/list/baijiu-xiaohutuxian" class="color0" target="_blank">小糊涂仙</a>
+                                        <a href="http://www.gjw.com/list/baijiu-yingjiajiu" class="color0" target="_blank">迎驾</a>
+                                        <a href="http://www.gjw.com/list/baijiu-shuanggoujiu" class="color1" target="_blank">双沟</a>
+                                        <a href="http://www.gjw.com/list/baijiu-quanxing" class="color0" target="_blank">全兴</a>
+                                        <a href="http://www.gjw.com/list/baijiu" class="color3" target="_blank">更多</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box long">
+                                    <div class="list-tit">地域白酒品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/baijiu-shuxin" class="color1" target="_blank">舒心</a>
+                                        <a href="http://www.gjw.com/list/baijiu-baiyunbian" class="color0" target="_blank">白云边</a>
+                                        <a href="http://www.gjw.com/list/baijiu-taibaijiu" class="color0" target="_blank">太白酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-huanghelou" class="color0" target="_blank">黄鹤楼</a>
+                                        <a href="http://www.gjw.com/list/baijiu-tianxiafu" class="color0" target="_blank">天下福</a>
+                                        <a href="http://www.gjw.com/list/baijiu-sujiu" class="color1" target="_blank">苏酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-hongxing" class="color0" target="_blank">红星</a>
+                                        <a href="http://www.gjw.com/list/baijiu-kongfujia" class="color0" target="_blank">孔府家</a>
+                                        <a href="http://www.gjw.com/list/baijiu-wanjiu" class="color0" target="_blank">皖酒</a>
+                                        <a href="http://www.gjw.com/list/baijiu-bandaojing" class="color0" target="_blank">扳倒井</a>
+                                        <a href="http://www.gjw.com/list/baijiu-jinmengaoliangjiu" class="color1" target="_blank">金门高粱</a>
+                                        <a href="http://www.gjw.com/list/baijiu-jidao" class="color0" target="_blank">极道</a>
+                                        <a href="http://www.gjw.com/list/baijiu-laiguishan" class="color1" target="_blank">赖贵山</a>
+                                        <a href="http://www.gjw.com/baijiu" class="color3" target="_blank">更多</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box short">
+                                    <div class="list-tit">香型</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=110" class="color1" target="_blank">酱香型</a>
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=116" class="color1" target="_blank">浓香型</a>
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=117" class="color0" target="_blank">清香型</a>
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=108" class="color1" target="_blank">馥郁香型</a>
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=109" class="color0" target="_blank">兼香型</a>
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=121" class="color0" target="_blank">特香型</a>
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=122" class="color1" target="_blank">芝麻香型</a>
+                                        <a href="http://www.gjw.com/list/baijiu&amp;type=107" class="color0" target="_blank">凤香型</a>
+                                        <a href="" class="color1" target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix">
+                                    <a href="http://www.gjw.com/list/baijiu-maotai" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/5/10.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-wuliangye" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/5/11.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-jiannanchun" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/5/03.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-luzhoulaojiao" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/5/04.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-zhenjiu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E7%8F%8D%E9%85%92.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-langjiu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/5/05.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-yanghe" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/4/07.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-xijiu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/4/08.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/baijiu-shuijingfang" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/xm/623/3/09.jpg">
+                                    </a>
+                                </div>
+                                <a href="http://www.gjw.com/product/item-id-2614.htm" target="_blank">
+                                    <img src="http://img0.gjw.com/Minisite/2018/luy/6/6-16/1/2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ptj-on">
+                        <a href="http://www.gjw.com/putaojiu">
+                            <img src="../img/ptj-icon.png" />&nbsp;葡 萄 酒</a>
+                        <em>›</em>
+                        <div class="ptj-box sec-box none" id="putaojiu">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">知名品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/putaojiu-benfu" class="color1" target="_blank">奔富</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-lafeixilie" class="color1" target="_blank">拉菲</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-huangweidaishu" class="color0" target="_blank">黄尾袋鼠</a>
+                                        <a href="http://www.gjw.com/putaojiu-hongmogui" class="color1" target="_blank">红魔鬼</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-jiazhouleshi" class="color0" target="_blank">加州乐事</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-kasite" class="color0" target="_blank">卡斯特</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-changcheng" class="color0" target="_blank">长城</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-huangxuan" class="color0" target="_blank">皇轩</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-fabina" class="color1" target="_blank">法比纳古堡</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-jiekasi" class="color1" target="_blank">杰卡斯</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-wangchao" class="color0" target="_blank">王朝</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-xianggelila" class="color0" target="_blank">香格里拉</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-weilong" class="color0" target="_blank">威龙</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-dili" class="color1" target="_blank">帝力</a>
+                                        <a href="http://www.gjw.com/Search.html?Key=花漫山&amp;sour=null" class="color0" target="_blank">花漫山</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-zhangyu" class="color1" target="_blank">张裕</a>
+                                        <a href="http://www.gjw.com/putaojiu" class="color1" target="_blank">更多</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box short">
+                                    <div class="list-tit">店长推荐</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/Search.html?Key=1855%E5%B9%B4%E5%88%97%E7%BA%A7%E5%90%8D%E5%BA%84&amp;sour=null" class="color1"
+                                            target="_blank">1855年列级名庄</a>
+                                        <a href="http://www.gjw.com/Search.html?Key=%E4%B8%AD%E7%BA%A7%E5%BA%84&amp;sour=null" class="color1" target="_blank">中级庄</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-chanqujingxuan" class="color0" target="_blank">产区精选</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-lafeixilie" class="color0" target="_blank">拉菲专区</a>
+                                        <a href="http://www.gjw.com/list/putaojiu-benfu" class="color0" target="_blank">奔富专区</a>
+                                        <a href="http://www.gjw.com/list/putaojiu" class="color1" target="_blank">更多</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box short">
+                                    <div class="list-tit">类别</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;type=211" class="color3" target="_blank">红葡萄酒</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;type=212" class="color1" target="_blank">白葡萄酒</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;type=213" class="color4" target="_blank">桃红葡萄酒</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;type=214" class="color2" target="_blank">起泡酒</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box long">
+                                    <div class="list-tit">国家</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=162" class="color1" target="_blank">法国</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=163" class="color1" target="_blank">澳大利亚</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=1252" class="color0" target="_blank">意大利</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=1262" class="color0" target="_blank">德国</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=1222" class="color1" target="_blank">西班牙</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=165" class="color0" target="_blank">智利</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=1251" class="color0" target="_blank">南非</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=164" class="color1" target="_blank">中国</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=1264" class="color0" target="_blank">葡萄牙</a>
+                                        <a href="http://www.gjw.com/list/putaojiu&amp;we=1257" class="color0" target="_blank">美国</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix">
+                                    <a href="http://www.gjw.com/Brand/chanqujingxuan.htm" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2018/wp/0319/00.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-benfu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E5%A5%94%E5%AF%8C.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-lafeixilie" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/lafei.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-fabina" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E6%B3%95%E6%AF%94%E7%BA%B3.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-huangweidaishu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E9%BB%84%E5%B0%BE%E8%A2%8B%E9%BC%A0.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-hongmogui" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E7%BA%A2%E9%AD%94%E9%AC%BC.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-zhangyu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E5%BC%A0%E8%A3%95.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-kasite" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E5%8D%A1%E6%96%AF%E7%89%B9.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/putaojiu-jiekasi" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E6%9D%B0%E5%8D%A1%E6%96%AF.jpg">
+                                    </a>
+                                </div>
+                                <a href="http://www.gjw.com/product/item-id-7628.html" target="_blank">
+                                    <img src="http://img0.gjw.com/Minisite/2018/wp/0622a/1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="yj-on">
+                        <a href="http://www.gjw.com/yangjiu">
+                            <img src="../img/yj-icon.png" />&nbsp;洋 酒</a>
+                        <em>›</em>
+                        <div class="yj-box sec-box none" id="yangjiu">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/yangjiu-zunnihuojia" class="color3" target="_blank">尊尼获加</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-zhihuashi" class="color1" target="_blank">芝华士</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-jiekedanni" class="color1" target="_blank">杰克丹尼</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-rentouma" class="color0" target="_blank">人头马 </a>
+                                        <a href="http://www.gjw.com/list/yangjiu-madieli" class="color0" target="_blank">马爹利</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-xuannishi" class="color1" target="_blank">轩尼诗</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-yexian" class="color0" target="_blank">夜线</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-gelanfeidi" class="color0" target="_blank">格兰菲迪</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-sandeli" class="color1" target="_blank">三得利</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-dimo" class="color3" target="_blank">帝摩 </a>
+                                        <a href="http://www.gjw.com/list/yangjiu-heibaigou" class="color0" target="_blank">黑白狗 </a>
+                                        <a href="http://www.gjw.com/list/yangjiu-jila" class="color0" target="_blank">吉拉</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-peien" class="color0" target="_blank">培恩</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-muchangzhu" class="color1" target="_blank">牧场主</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-wensha" class="color0" target="_blank">温莎</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-heitan" class="color0" target="_blank">黑炭</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-huangjialuyi" class="color1" target="_blank">皇家路易</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-baijiade" class="color0" target="_blank">百加得</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-shenlan" class="color0" target="_blank">深蓝</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-ruidianjuedui" class="color0" target="_blank">瑞典绝对</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-diwang" class="color0" target="_blank">帝王</a>
+                                        <a href="http://www.gjw.com/list/yangjiu-bailingtan" class="color1" target="_blank">百龄坛</a>
+                                        <a href="http://www.gjw.com/list/yangjiu" class="color0" target="_blank">更多</a>
+                                    </div>
+                                </div>
+                                <div class=" list-box long">
+                                    <div class="list-tit">品类</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=326" class="color1" target="_blank">白兰地 Brandy</a>
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=335" class="color4" target="_blank">调和威士忌</a>
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=327" class="color0" target="_blank">伏特加 Vodka</a>
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=328" class="color0" target="_blank">朗姆酒 Rum</a>
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=539" class="color0" target="_blank">金酒</a>
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=2547" class="color0" target="_blank">力娇酒 Liqueur</a>
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=1896" class="color1" target="_blank">单一麦芽威士忌</a>
+                                        <a href="http://www.gjw.com/list/yangjiu&amp;type=2545" class="color1" target="_blank">龙舌兰 Tequila</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix">
+                                    <a href="http://www.gjw.com/list/yangjiu-zhihuashi" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E8%8A%9D%E5%8D%8E%E5%A3%AB.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-zunnihuojia" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E5%B0%8A%E5%B0%BC%E8%8E%B7%E5%8A%A0.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-maikalun" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E9%BA%A6%E5%8D%A1%E8%BD%AE.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-muchangzhu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E7%89%A7%E5%9C%BA%E4%B8%BB.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-bailingtan" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E7%99%BE%E9%BE%84%E5%9D%9B.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-xuannishi" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E8%BD%A9%E5%B0%BC%E8%AF%97.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-madieli" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E9%A9%AC%E7%88%B9%E5%88%A9.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-rentouma" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E4%BA%BA%E5%A4%B4%E9%A9%AC.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/yangjiu-huangjialuyi" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E7%9A%87%E5%AE%B6%E8%B7%AF%E6%98%93.jpg">
+                                    </a>
+                                </div>
+                                <a href="http://www.gjw.com/product/item-id-79.htm" target="_blank">
+                                    <img src="http://img0.gjw.com/Minisite/2018/wp/0622a/2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hj-on">
+                        <a href="http://www.gjw.com/huangjiu">
+                            <img src="../img/hj-icon.png" />&nbsp;黄 酒</a>
+                        <em>›</em>
+                        <div class="hj-box sec-box none" id="huangjiu">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/huangjiu-guyuelongshan" class="color1" target="_blank">古越龙山</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-nverhong" class="color1" target="_blank">女儿红</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-tonglihong" class="color1" target="_blank">同里红</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-qingjian" class="color0" target="_blank">清鉴</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-hejiu" class="color0" target="_blank">和酒</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-wuzhanmao" class="color0" target="_blank">乌毡帽</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-huijishan" class="color1" target="_blank">会稽山</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-tapai" class="color0" target="_blank">塔牌</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-qiantangrenjia" class="color0" target="_blank">钱塘人家</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-shazhouyouhuang" class="color3"
+                                            target="_blank">沙洲优黄</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-matouqiang" class="color1" target="_blank">马头墙</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-shikumen" class="color0" target="_blank">石库门</a>
+                                        <a href="http://www.gjw.com/list/huangjiu-liangzhu" class="color1" target="_blank">梁祝</a>
+                                        <a href="http://www.gjw.com/list/huangjiu" class="color1" target="_blank">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix">
+                                    <a href="http://www.gjw.com/list/huangjiu-guyuelongshan" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E5%8F%A4%E8%B6%8A%E9%BE%99%E5%B1%B1.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-nverhong" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E5%A5%B3%E5%84%BF%E7%BA%A2.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-tangsong" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E5%94%90%E5%AE%8B.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-qingjian" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/wp/00/111.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-tonglihong" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite/2017/wp/00/22222.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-huijishan" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E4%BC%9A%E7%A8%BD%E5%B1%B1.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-matouqiang" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E9%A9%AC%E5%A4%B4%E5%A2%99.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-shazhouyouhuang" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E6%B2%99%E6%B4%B2%E4%BC%98%E9%BB%84.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/huangjiu-tapai" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E5%A1%94%E7%89%8C.jpg">
+                                    </a>
+                                </div>
+                                <a href="http://www.gjw.com/Product/item-ID-7262.htm" target="_blank">
+                                    <img src="http://img0.gjw.com/Minisite/2018/wp/0622a/3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ysj-on">
+                        <a href="http://www.gjw.com/qingjiu">
+                            <img src="../img/ysj-icon.png" />&nbsp;清 酒</a>
+                        <em>›</em>
+                        <div class="ysj-box sec-box none" id="ys">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/qingjiu-yibenyi" class="color1" target="_blank">一本义</a>
+                                        <a href="http://www.gjw.com/list/qingjiu-juzhengzong" class="color0" target="_blank">
+                                        菊正宗</a>
+                                        <a href="http://www.gjw.com/list/qingjiu-baixue" class="color3" target="_blank">
+                                        白雪</a>
+                                        <a href="http://www.gjw.com/product/item-id-7347.htm" class="color0" target="_blank">清洲樱</a>
+                                        <a href="http://www.gjw.com/list/qingjiu-ribensheng" class="color0" target="_blank">日本盛</a>
+                                        <a href="http://www.gjw.com/list/qingjiu-yueguiguan" class="color1" target="_blank">月桂冠</a>
+                                        <a href="http://www.gjw.com/list/qingjiu-songzhumei" class="color1" target="_blank">松竹梅</a>
+                                        <a href="http://www.gjw.com/list/qingjiu-fuzhishan" class="color1" target="_blank">富之山</a>
+                                        <a href="http://www.gjw.com/list/qingjiu-tianxiapinghegui" class="color1"
+                                            target="_blank">天下平和鬼</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix">
+                                    <a href="http://www.gjw.com/list/qingjiu-juzhengzong" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E8%8F%8A%E6%AD%A3%E5%AE%97.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/qingjiu-yibenyi" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E4%B8%80%E6%9C%AC%E6%9B%A6.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/qingjiu-baixue" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E7%99%BD%E9%9B%AA.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/product/item-id-7348.htm" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E6%97%A5%E6%9C%AC%E6%99%9F.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/product/item-id-7347.htm" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0706lg/%E6%B8%85%E6%B4%B2%E6%A8%B1%E9%AC%BC%E9%85%92.jpg">
+                                    </a>
+                                </div>
+                                <a href="http://www.gjw.com/Product/item-ID-7347.htm" target="_blank">
+                                    <img src="http://img0.gjw.com/Minisite/2018/wp/0622a/4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pj-on">
+                        <a href="http://www.gjw.com/list/pijiu">
+                            <img src="../img/pj-icon.png" />&nbsp;啤 酒</a>
+                        <em>›</em>
+                        <div class="pj-box sec-box none" id="pijiu">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">品牌</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/list/pijiu-fujia" class="color0" target="_blank">福佳</a>
+                                        <a href="http://www.gjw.com/list/pijiu-keluona" class="color1" target="_blank">科罗娜</a>
+                                        <a href="http://www.gjw.com/list/pijiu-xueding" class="color1" target="_blank">雪顶</a>
+                                        <a href="http://www.gjw.com/list/pijiu-1664" class="color1" target="_blank">1664</a>
+                                        <a href="http://www.gjw.com/list/pijiu-duwei" class="color0" target="_blank">督威</a>
+                                        <a href="http://www.gjw.com/list/pijiu-baixiong" class="color1" target="_blank">白熊</a>
+                                        <a href="http://www.gjw.com/list/pijiu-chaori" class="color0" target="_blank">朝日</a>
+                                        <a href="http://www.gjw.com/list/pijiu-jianlishi" class="color1" target="_blank">健力士</a>
+                                        <a href="http://www.gjw.com/list/pijiu" class="color1" target="_blank">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix">
+                                    <a href="http://www.gjw.com/list/pijiu-deguohuangjiabojue" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/bojue.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/pijiu-baiweipijiu" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/%E7%99%BE%E5%A8%81.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/pijiu-xueding" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/xueding.jpg">
+                                    </a>
+                                    <a href="http://www.gjw.com/list/pijiu-jinglingbao" target="_blank">
+                                        <img src="http://img0.gjw.com/Minisite//2017/wp/0623/jinglingbao.jpg">
+                                    </a>
+                                </div>
+                                <a href="http://www.gjw.com/product/item-id-3399.htm" target="_blank">
+                                    <img src="http://img0.gjw.com/Minisite/2018/wp/0622a/5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="jjzb-on">
+                        <a href="http://www.gjw.com/list/jiujujigengduo">
+                            <img src="../img/jjzb-icon.png" />&nbsp;酒具周边</a>
+                        <em>›</em>
+                        <div class="jjzb-box sec-box none" id="zb">
+                            <div class="box-lt fl clearfix">
+                                <div class=" list-box long">
+                                    <div class="list-tit">分类</div>
+                                    <div class="list-msg clearfix">
+                                        <a href="http://www.gjw.com/jiujujigengduo-jiubei/" class="color1" target="_blank">酒杯</a>
+                                        <a href="http://www.gjw.com/list/jiujujigengduo-jiudao" class="color1" target="_blank">酒刀</a>
+                                        <a href="http://www.gjw.com/list/jiujujigengduo-xingjiuqi" class="color3" target="_blank">醒酒器</a>
+                                        <a href="http://www.gjw.com/list/jiujujigengduo-shuji" class="color0" target="_blank">书籍</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-rt fl clearfix">
+                                <div class="itemicon-box clearfix"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="xp-on">
+                        <a href="http://www.gjw.com/Search.html?Key=ALL">
+                            <img src="../img/xp-icon.png" />&nbsp;新 品</a>
+                        <em>›</em>
+                        <div class="jjzb-box sec-box none">
+                            <div class="box-lt fl clearfix"></div>
+                        </div>
+                    </li>
+                    <li class="xp-on">
+                        <a href="http://www.gjw.com/qingcang/default.htm">
+                            <img src="../img/qingcang.png" />&nbsp;清 仓</a>
+                        <em>›</em>
+                        <div class="jjzb-box sec-box none">
+                            <div class="box-lt fl clearfix"></div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.gjw.com">首页</a>
+            </li>
+            <li>
+                <a href="http://tm.gjw.com">特卖会</a>
+            </li>
+            <li>
+                <a href="http://import.gjw.com/">进口馆</a>
+            </li>
+            <li>
+                <a href="http://www.gjw.com/help/caigou.htm">商家采销</a>
+            </li>
+            <li>
+                <a href="http://www.gjw.com/shoucang/default.htm">高端收藏</a>
+            </li>
+            <li>
+                <a href="http://www.gjw.com/Minisite/20170419/1199.htm">尾货直批</a>
+            </li>
+        </ul>
+        <div class="fr" id="rigft_advertisting">
+            <a href="http://www.gjw.com/product/item-id-7460.html" target="_blank">
+                <img src="http://img0.gjw.com/Famous/2018/0508/6a9d90cda55e4389815f5a78f37bc9c2.gif" alt="" original="http://img0.gjw.com/Famous/2018/0508/6a9d90cda55e4389815f5a78f37bc9c2.gif">
+            </a>
+        </div>
+    </div>
+    <!--商品导航e-->
+    <!--首页头部e-->
+    <!--头部e-->
+    <div class="center">   
+<script type="text/javascript">
+//获取url参数
+function GetQueryString(name) {
+var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+var r = window.location.search.substr(1).match(reg);
+if (r != null) return unescape(r[2]); return null;
+}
+//是否手机访问
+var ua = navigator.userAgent;
+var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),//iPad
+isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),//iPhone
+isAndroid = ua.match(/(Android)\s+([\d.]+)/),//Android
+isMobile = isIphone || isAndroid;
+//手机访问直接跳转到M站
+if (isMobile) {
+var isPC = GetQueryString("isMgjw");
+if (isPC != "1") {//手机访问,链接中没有参数,跳转到M站
+  location.href = 'http://m.gjw.com';
+}
+}
+
+</script>
+<!--轮播-2-->
+<div style="background: #FFFFFF;">
+<div style="border-bottom: 1px solid #EAEAEA; width: 100%;">
+<div class="swiper-container">
+      <div class="gjw-wrapper" style="background: rgb(48, 50, 62); position: absolute; margin: 0px auto; display: none;">
+          <a href="http://www.gjw.com/Minisite/20180629/1515.htm" target="_blank">
+              <img width="1200" src="http://img0.gjw.com/Famous/2018/0629/fa6b85c456e043b6bf47ded738dda4a9.jpg"></a>
+      </div>
+      <div class="gjw-wrapper bractive" style="background: rgb(19, 0, 1); position: absolute; margin: 0px auto; display: block;">
+          <a href="http://www.gjw.com/product/item-id-7290.html" target="_blank">
+              <img width="1200" src="http://img0.gjw.com/Famous/2018/0404/ff931507b8ef46c5b11efa4272cf630d.jpg"></a>
+      </div>
+      <div class="gjw-wrapper" style="background: rgb(118, 119, 131); position: relative; margin: 0px auto; display: none;">
+          <a href="http://www.gjw.com/product/item-id-7577.htm" target="_blank">
+              <img width="1200" src="http://img0.gjw.com/Famous/2018/0601/542dc6b513d1402f80c17c97da3cbad4.jpg"></a>
+      </div>
+      <div class="gjw-wrapper" style="background: rgb(105, 138, 193); position: relative; margin: 0px auto; display: none;">
+          <a href="http://www.gjw.com/product/Item-ID-7170.htm" target="_blank">
+              <img width="1200" src="http://img0.gjw.com/Famous/2018/0629/8e4d5beb9af944fdaf71f57a170bcfdd.jpg"></a>
+      </div>
+      <div class="gjw-wrapper" style="background: rgb(172, 131, 100); position: relative; margin: 0px auto; display: none;">
+          <a href="http://www.gjw.com/product/item-id-5961.html" target="_blank">
+              <img width="1200" src="http://img0.gjw.com/Famous/2018/0428/c5c4d95758614015a1dd1a5abe8efeb2.jpg"></a>
+      </div>
+ 
+  <div class="v6_floatAd" style="position: absolute; top: 0px; left: 50%; margin-left: 410px; z-index: 4;">
+      <div class="shine" style="width: 190px; height: 470px; overflow: hidden;opacity:0.9;">
+          
+              <a href="http://www.gjw.com/product/item-id-5273.htm" target="_blank"><img src="http://img0.gjw.com/Famous/2018/0622/9030f155c0214a1480218078ac06238b.jpg" original="http://img0.gjw.com/Famous/2018/0622/9030f155c0214a1480218078ac06238b.jpg"> </a> 
+              <a href="http://www.gjw.com/Product/item-ID-4414.htm" target="_blank"><img src="http://img0.gjw.com/Famous/2018/0622/e86db68cfc5143d8ae998f348b785465.jpg" original="http://img0.gjw.com/Famous/2018/0622/e86db68cfc5143d8ae998f348b785465.jpg"> </a> 
+      </div>
+  </div>
+ <div class="controllbox"><div class="swiper-pagination">
+     <span class="swiper-index" data-id="5">1</span>
+     <span class="swiper-index" data-id="4" style="background: red;">2</span>
+     <span class="swiper-index" data-id="3">3</span>
+     <span class="swiper-index" data-id="2">4</span>
+     <span class="swiper-index" data-id="1" style="">5</span></div><div class="swiper-button-prev prevbtn1"></div><div class="swiper-button-next nextbtn1"></div></div></div>
+
+<div class="nav-note">  
+  <span class="fl">
+      <img original="../img/zhen-icon.png" src="../img/zhen-icon.png" style="display: inline;">&nbsp;&nbsp;正品保证 放心购买 </span>
+  <span class="fl">
+      <img original="../img/mian-icon.png" src="../img/mian-icon.png" style="display: inline;">&nbsp;&nbsp;满100即享全国免邮费</span>
+  <span class="fl">
+      <img original="../img/pei-icon.png" src="../img/pei-icon.png" style="display: inline;">&nbsp;&nbsp;破损包赔 售后无忧</span>
+  <a class="fr" href="http://android.myapp.com/myapp/detail.htm?apkName=com.shichuang.goujiuwang&amp;ADTAG=mobile"><img original="../img/phone-icon.png" src="../img/phone-icon.png" style="display: inline;">&nbsp;&nbsp;  APP下单更优惠</a>
+</div>
+</div>
+</div>
+<!--轮播-e-->
+    <!--尾部-s-->
+
+
+    
+<!--首页头部s-->
+<div class="fixedSch_box" style="top: 0px; display: block;">
+        <div class="mid_box">
+            <a href="" class="fixedSch_logo">
+                <img src="../img/whiteLogo.png" alt="" class="fl" original="../img/whiteLogo.png">
+            </a>
+            <div class="fixedSch_schBox fl" id="fixSch">
+                
+            <div class="@@-container"><input type="text" @@="off" name="query" placeholder="茅台飞天" class="topSearchtxt fl" style="border-radius: 3px 0px 0px 3px;"><div class="proposal-box"><ul class="proposal-list"></ul></div><div class="topSearchbtn fl">搜索</div></div></div>
+        </div>
+    </div>
+    <script>
+    	    $(window).scroll(function () {
+    	        var nav = $('.nav-note').offset().top - $(document).scrollTop()
+    	        if (nav < -102) {
+    	            $(".fixedSch_box").css("display", "block");
+    	        } else {
+    	            $(".fixedSch_box").css("display", "none")
+    	        }
+    	    })
+	</script>
+</div>
+<!--右侧导航-s-->
+<div class="rightFixedBar">
+        <div class="rightFixedBar_inner">
+            <a id="righthyzx" href="http://order.gjw.com/UserCenter/MyOrder.html" target="_blank" class="rb_btn rb_Center" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont mine"></span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">会员中心</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a href="http://order.gjw.com/order/Cart.html" rel="nofollow" class="rb_btn rb_Center"> 
+                <div class="footer_iconBox">
+                    <span class="iconfont cart"></span> 购<br>
+                    物<br>
+                    车
+                </div>
+            </a>
+            <div id="shopping_poppup" class="shopping_poppup" style="display: none;">
+                <a class="shopping_poppup_a" href="http://order.gjw.com/order/Cart.htm" rel="nofollow">去购物车结算</a>
+                <span class="shopping_poppup_onoff"></span>
+                <div class="shopping_poppup_tab">
+                </div>
+            </div>
+            <a id="rightyhq" href="http://order.gjw.com/UserCenter/MyVoucher.html" target="_blank" class="rb_btn rb_Center" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont gerenzhongxinyouhuiquan"></span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">我的优惠券</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a id="rightsc" href="http://order.gjw.com/UserCenter/MyFav.html" target="_blank" class="rb_btn rb_Center" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont 31shoucang"></span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">我的收藏</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a>
+            <div href="" class="rb_btn rb_Center">
+                <div class="footer_iconBox">
+                    <span class="iconfont erweima"></span>
+                </div>
+                <div class="iconBox_tips tips_qrcode">
+                    <div class="tips_imgBox">
+                        <a href=""> 
+                            <img src="http://order.gjw.com/image/APP.png" alt="" original="http://order.gjw.com/image/APP.png"> 
+                        </a>
+                    </div>
+                    <span class="tips_arrow">◆</span>
+                </div>
+            </div>
+    
+                    <div href="" class="rb_btn rb_Center">
+                        <div class="footer_iconBox">
+                            <span class="iconfont zan"></span>
+                        </div>
+                        <div class="iconBox_tips tips_zan">
+                            <div class="tips_imgBox" id="tips_imgBox"><a href="http://www.gjw.com/product/item-id-3568.htm" target="_blank"><img src="http://img0.gjw.com/Famous/2017/0721/00d84c57071640e69b4fae0cccbe2cf3.jpg" alt="" original="http://img0.gjw.com/Famous/2017/0721/00d84c57071640e69b4fae0cccbe2cf3.jpg"></a></div> <span class="tips_arrow">◆</span> </div> </div>
+        
+            <a onclick="NTKF.im_openInPageChat('kf_9250_1462524671271')" class="rb_btn rb_Center" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont kefu"></span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">在线客服</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a href="http://order.gjw.com/FeedBack/default.htm" class="rb_btn rb_Center" style="margin-top: 70px;" rel="nofollow">
+                <div class="footer_iconBox">
+                    <span class="iconfont edit"></span>
+                </div>
+                <div class="iconBox_tips" style="display: none; opacity: 0; right: 80px;">
+                    <span class="tips">用户反馈</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a><a href="" class="rb_btn rb_Center" id="rightBar_backTop">
+                <div class="footer_iconBox">
+                    <span class="iconfont fanhui3"></span>
+                </div>
+                <div class="iconBox_tips">
+                    <span class="tips">返回顶部</span> <span class="tips_arrow">◆</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
